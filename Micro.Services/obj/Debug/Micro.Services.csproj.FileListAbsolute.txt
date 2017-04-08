@@ -1,0 +1,5 @@
+D:\ООП и Събитийно Програмиране\Exercise\Micro\Micro.Services\bin\Debug\Micro.Services.dll
+D:\ООП и Събитийно Програмиране\Exercise\Micro\Micro.Services\bin\Debug\Micro.Services.pdb
+D:\ООП и Събитийно Програмиране\Exercise\Micro\Micro.Services\obj\Debug\Micro.Services.csprojResolveAssemblyReference.cache
+D:\ООП и Събитийно Програмиране\Exercise\Micro\Micro.Services\obj\Debug\Micro.Services.dll
+D:\ООП и Събитийно Програмиране\Exercise\Micro\Micro.Services\obj\Debug\Micro.Services.pdb

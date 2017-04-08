@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using Micro.Services;
 
 namespace Micro.Data
 {
@@ -12,6 +13,8 @@ namespace Micro.Data
     public class ApplicationDbContext :
         IdentityDbContext<ApplicationUser>
     {
+        public IDbSet<Company> Comapanies { get; set; }
+        public IDbSet<CompanySettings> CompanySettings { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

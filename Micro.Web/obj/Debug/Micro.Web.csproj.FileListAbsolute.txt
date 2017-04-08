@@ -69,3 +69,5 @@ D:\ООП и Събитийно Програмиране\Exercise\Micro\Micro.We
 D:\ООП и Събитийно Програмиране\Exercise\Micro\Micro.Web\obj\Debug\Micro.Web.pdb
 D:\ООП и Събитийно Програмиране\Exercise\Micro\Micro.Web\bin\Micro.Data.dll
 D:\ООП и Събитийно Програмиране\Exercise\Micro\Micro.Web\bin\Micro.Data.pdb
+D:\ООП и Събитийно Програмиране\Exercise\Micro\Micro.Web\bin\Micro.Services.dll
+D:\ООП и Събитийно Програмиране\Exercise\Micro\Micro.Web\bin\Micro.Services.pdb
