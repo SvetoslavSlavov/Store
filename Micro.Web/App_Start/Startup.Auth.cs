@@ -55,15 +55,15 @@ namespace Micro.Web
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "1483618831671517",
+               appSecret: "93b45e164e54004384ea7d22e39c061a");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "331775533204-g9t6ngbeohqd8fiv8lkv2q3q49pcseh1.apps.googleusercontent.com",
+                ClientSecret = "ILRpkpKuvmNKwMgIN-cxdTS3"
+            });
         }
     }
 }

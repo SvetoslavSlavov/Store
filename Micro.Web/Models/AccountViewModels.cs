@@ -55,10 +55,10 @@ namespace Micro.Web.Models
 
         [Required]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "Парола")]
         public string Password { get; set; }
 
-        [Display(Name = "Remember me?")]
+        [Display(Name = "Запомни ме?")]
         public bool RememberMe { get; set; }
     }
 
@@ -66,23 +66,24 @@ namespace Micro.Web.Models
     {
         [Required]
         [EmailAddress]
-        [Display(Name = "Email")]
+        [Display(Name = "Email*")]
         public string Email { get; set; }
 
         [Required]
-        [Display(Name ="Full Name")]
+        [Display(Name ="Име и Фамилия*")]
         public string FullName { get; set; }
 
         [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 1)]
+        [StringLength(100, ErrorMessage = "{0} трябва да бъде поне {2} символа дълга.", MinimumLength = 1)]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "Парола")]
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        [Display(Name = "Потвърди парола")]
+        [Compare("Password", ErrorMessage = "Паролата и потвърдената парола не съвпадат.")]
         public string ConfirmPassword { get; set; }
+}
     }
 
     public class ResetPasswordViewModel
@@ -113,4 +114,4 @@ namespace Micro.Web.Models
         [Display(Name = "Email")]
         public string Email { get; set; }
     }
-}
+

@@ -148,10 +148,17 @@ namespace Micro.Web.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
+
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
             if (ModelState.IsValid)
             {
+                string EncodedResponse = Request.Form["g-Recaptcha-Response"];
+                bool IsCaptchaValid = (ReCaptcha.Validate(EncodedResponse) == "True" ? true : false);
+                if (IsCaptchaValid)
+                {
+
+                }
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email, FullName = model.FullName };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
@@ -167,6 +174,10 @@ namespace Micro.Web.Controllers
                     return RedirectToAction("Index", "Home");
                 }
                 AddErrors(result);
+            }
+            else
+            {
+                TempData["recaptcha"] = "Моля удостоверете, че не сте бот";
             }
 
             // If we got this far, something failed, redisplay form

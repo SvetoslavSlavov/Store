@@ -71,3 +71,5 @@ D:\ООП и Събитийно Програмиране\Exercise\Micro\Micro.We
 D:\ООП и Събитийно Програмиране\Exercise\Micro\Micro.Web\bin\Micro.Data.pdb
 D:\ООП и Събитийно Програмиране\Exercise\Micro\Micro.Web\bin\Micro.Services.dll
 D:\ООП и Събитийно Програмиране\Exercise\Micro\Micro.Web\bin\Micro.Services.pdb
+D:\ООП и Събитийно Програмиране\Exercise\Micro\Micro.Web\bin\BotDetect.dll
+D:\ООП и Събитийно Програмиране\Exercise\Micro\Micro.Web\bin\BotDetect.Web.Mvc.dll
